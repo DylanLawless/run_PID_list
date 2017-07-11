@@ -1,25 +1,14 @@
-sort /Users/meddlawa/Desktop/names-list.txt | uniq -id | uniq -i >> /Users/meddlawa/Desktop/names-list.done.txt
+# sort f1.txt f2.txt | uniq -d
+
+# sort -u test.txt >> dedup.txt
+
+# sort dedup.txt PID_gene_list.txt | uniq -d
+
+# sort 5.dedup.txt PID_gene_list.txt | awk 'dup[$0]++ == 1'
+
+# sort PID_gene_list.txt | uniq -d
 
 
-sort f1.txt f2.txt | uniq -d
-
-
-sort -u test.txt >> dedup.txt
-
-sort dedup.txt PID_gene_list.txt | uniq -d
-
-
-
-
-
-sort 5.dedup.txt PID_gene_list.txt | awk 'dup[$0]++ == 1'
-
-sort PID_gene_list.txt | uniq -d
-
-
-
-
-#!/bin/bash
 sort -u 5.txt >> 5.dedup.txt
 sort -u 6.txt >> 6.dedup.txt
 sort -u 7.txt >> 7.dedup.txt
